@@ -9,9 +9,8 @@ import { JobsComponent } from './jobs/jobs.component';
 import { ProyectsComponent } from './proyects/proyects.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-
 import { BrowserModule } from '@angular/platform-browser';
-import {CarouselModule} from "ngx-owl-carousel-o"
+
 
 
 
@@ -35,7 +34,6 @@ import {CarouselModule} from "ngx-owl-carousel-o"
     BrowserAnimationsModule,
     HttpClientModule,
     BrowserModule,
-    CarouselModule
     
    
   ],
