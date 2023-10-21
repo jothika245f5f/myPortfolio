@@ -1,0 +1,66 @@
+<section class="section banner">
+  <div [@bannerTrigger] class="container">
+    <div class="section-box-banner">
+      <div class="row">
+        <div class="col-18 col-md-8 mb-8 mb-md-0">
+          <div class="content">
+            <div>
+              <!-- <h1>Hola, mi nombre es</h1> -->
+              <h1>Hello! My name is</h1>
+            </div>
+            <div class="banner-title">
+              <h2>Jothika P.</h2>
+              <h3>Frontend Developer</h3>
+            </div>
+            <div class="banner-description">
+              <p class="mt-4">
+                I have <span class="underline">2 years of experience</span>
+                Involved in designing the user experience interface UI/UX
+                strategy, UI requirements, converting findings into UI designs
+                and Developed web pages using
+                <span class="underline"> HTML/CSS and JavaScript.</span>
+                I am dedicated to writing and refactoring clean, reusable, and
+                scalable code in
+                <span class="underline">Angular</span> and sometimes in
+                <span class="underline">React framework</span> applying good
+                practices and development standards.
+              </p>
+            </div>
+          </div>
+
+          <div class="div-btn-banner">
+            <a
+              (click)="
+                analyticsService.sendAnalyticEvent(
+                  'click_send_mail',
+                  'banner',
+                  'email'
+                )
+              "
+              href="mailto:jothikaperumal2001@gmail.com"
+              target="_black"
+              class="main-btn"
+            >
+              Get in touch
+            </a>
+          </div>
+        </div>
+        <div class="col-4 col-md-3 mt-2 mt-md-0 text-center">
+          <div class="section2">
+            <div #myDiv class="hexagon-part">
+              <div class="hexagon-shape"></div>
+            </div>
+
+            <div>
+              <p class="text">
+                "Design is the intermediary between information and
+                understanding."
+                <i class="fab fa-opencart fa-pulse"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

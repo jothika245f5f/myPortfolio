@@ -1,0 +1,134 @@
+@import "./../../../../variables.scss";
+
+.container2 {
+    margin: 0 5rem 0;
+    animation-name: spin;
+    animation-duration: 2800ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier();
+
+    @keyframes spin {
+        from {
+            transform: rotate(170deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    .ball {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color:$Green;
+        position: absolute;
+        margin-top: 12rem;
+    }
+
+}
+
+.contact {
+
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    height: 100vh;
+    display: table;
+
+    .container {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .contact-title {
+
+        position: relative;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        white-space: nowrap;
+        font-size: 60px;
+        font-weight: 600;
+        color: $LightestSlate;
+        margin: auto;
+        width: fit-content;
+    }
+
+    .contact-pre-title {
+        position: relative;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin: 10px 0 40px;
+        width: 100%;
+        white-space: nowrap;
+        font-size: 32px;
+        display: block;
+        color:$Green;
+        font-size: 16px;
+        font-family: $CodeFont;
+        font-weight: normal;
+        margin-bottom: 20px;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    i {
+        font-size: 25px;
+        color: $LightSlate;
+    }
+
+    @keyframes move {
+        0% {
+            transform: translateY(0) rotateX(0);
+        }
+
+        25% {
+            transform: translateY(-30px) rotateX(40deg);
+        }
+
+        50% {
+            transform: rotateX(0) translateY(0);
+        }
+
+        75% {
+            transform: rotateX(-40deg) translateY(30px);
+        }
+
+        100% {
+            transform: rotateX(0) translateY(0);
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .contact {
+        height: 100vh;
+        padding: 0 !important;
+        margin: 0 auto !important;
+        display: table;
+
+        .container {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+}

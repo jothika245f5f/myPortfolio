@@ -1,0 +1,225 @@
+@import "./../../../../variables.scss";
+
+.banner {
+    min-height: 100vh;
+
+    .container {
+        display: table;
+        height: 100vh;
+
+        .section-box-banner {
+            display: table-cell;
+            vertical-align: middle;
+
+            .content {
+                margin-top: 138px;
+                ;
+            }
+
+            h1 {
+
+                color: $Green;
+                margin: 0 0 20px 3px;
+                font-size: 16px;
+                font-weight: normal;
+                font-family: $CodeFont;
+            }
+
+            h2,
+            h3 {
+                font-weight: 600;
+                font-size: 80px;
+                line-height: 1.1;
+                margin: 0;
+                font-family: $MainFont;
+            }
+
+            h2 {
+                color: $LightestSlate;
+            }
+
+            h3 {
+                color: $Slate;
+            }
+
+            .banner-description {
+                margin-bottom: 70px;
+            }
+
+            p {
+                max-width: 500px;
+            }
+
+            .div-btn-banner {
+                height: 43px;
+            }
+
+        }
+
+        .section2 {
+
+            margin-top: 12rem;
+            animation-name: spin;
+            animation-duration: 1800ms;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+
+
+            .hexagon-part {
+
+                height: 300px;
+                width: 300px;
+                animation-name: example;
+                animation-duration: 10s;
+                animation-delay: 2s;
+                border-radius: 15px 50px;
+                left: 100px;
+                transition: left 5s cubic-bezier(.5, -1, .5, 2);
+                animation-iteration-count: infinite;
+
+                @keyframes example {
+                    0% {
+                        background-color: rgb(180, 201, 217);
+                        left: 0px;
+                        top: 0px;
+                    }
+
+                    25% {
+                        background-color: rgb(32, 56, 91);
+                        left: 200px;
+                        top: 0px;
+                    }
+
+                    50% {
+                        background-color: rgb(162, 86, 160);
+                        left: 200px;
+                        top: 200px;
+                    }
+
+                    75% {
+                        background-color: rgb(55, 2, 57);
+                        left: 0px;
+                        top: 200px;
+                    }
+
+                    100% {
+                        background-color: rgb(228, 178, 232);
+                        left: 0px;
+                        top: 0px;
+                    }
+                }
+
+                @keyframes spin {
+                    from {
+                        transform: rotate(0deg);
+                    }
+
+                    to {
+                        transform: rotate(360deg);
+                    }
+                }
+
+            }
+
+            .hexagon-shape {
+                position: relative;
+                overflow: hidden;
+                background: transparent;
+                /* add slash at the end of line to see the rhombus *
+                        outline: solid 1px red;/**/
+                width: 299.28px;
+                height: 299.28px;
+                transform: rotate(-30deg) skewX(30deg) scaleY(.866);
+            }
+
+
+            .hexagon-shape:before {
+                position: absolute;
+                right: 6.7%;
+                bottom: 0;
+                left: 6.7%;
+                top: 0;
+                transform: scaleY(1.155) skewX(-30deg) rotate(30deg);
+                background: url(img.jpg), repeat;
+                background-size: contain;
+                background-position-x: center;
+
+                content: '';
+            }
+
+            .text {
+                max-width: 27rem;
+                text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+                margin-top: 1.5rem;
+                font-size: large;
+                font-family: 'Font Awesome 5 Brands';
+            }
+
+            i {
+                font-size: 19px;
+                color: $LightSlate;
+            }
+        }
+
+
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+
+    .text {
+        width: 17rem !important;
+        margin-left: -3rem;
+    }
+   
+    .hexagon-part {
+        height: 186px !important;
+        width: 191px !important;
+    }
+
+    .hexagon-shape {
+        width: 188.28px !important;
+        height: 188.28px !important;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 990px) {
+   
+        .text {
+            width: 16rem !important;
+            margin-left: -3rem;
+        }
+    .hexagon-part {
+        height: 186px !important;
+        width: 191px !important;
+    }
+
+    .hexagon-shape {
+        width: 188.28px !important;
+        height: 188.28px !important;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+
+    .section2{
+        margin-top: 4rem !important;
+        margin-left: 5rem;
+    }
+    .text {
+        width: 17rem !important;
+        margin-left: -3rem;
+    }
+    .hexagon-part {
+        height: 130px !important;
+        width: 130px !important;
+    }
+
+    .hexagon-shape {
+        width: 128.28px !important;
+        height: 128.28px !important;
+    }
+
+}
