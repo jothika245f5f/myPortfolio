@@ -29,6 +29,7 @@
               "src/favicon.ico",
               "src/assets",
               "src/assets/images",
+              "src/assets/cv",
               {
                 "glob": "**/*",
                 "input": "src/assets",
