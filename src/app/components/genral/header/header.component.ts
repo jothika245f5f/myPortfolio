@@ -53,7 +53,7 @@ export class HeaderComponent {
 
   downloadCV(){
     
-     let url = "/assets/cv/_Jothika_P_Resume_2 yr_.pdf"
+     let url = "./assets/cv/_Jothika_P_Resume_2 yr_.pdf"
       this.analyticsService.downloadPDF(url).subscribe(res => {
         const fileURL = URL.createObjectURL(res);
         window.open(fileURL, '_blank');
