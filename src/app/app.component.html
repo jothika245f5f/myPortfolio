@@ -1,7 +1,17 @@
-<app-header> </app-header>
-
-<app-home></app-home>
-<router-outlet></router-outlet>
 
 
-<app-footer></app-footer>
+
+
+
+
+<div class="wrapper">
+    <div class="sidebar" *ngIf="loader">
+        <div class="loader"></div>
+    </div>
+    <div class="main-panel" *ngIf="!loader">
+        <app-header> </app-header>
+        <app-home></app-home>
+      <router-outlet></router-outlet>
+      <app-footer></app-footer>
+    </div>
+  </div>
